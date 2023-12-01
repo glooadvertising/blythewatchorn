@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+
+.btn {
+    display: inline-flex;
+    padding: v.$bwSpaceThin v.$bwSpaceRegular;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    line-height: 1.1;
+    border: 1px solid;
+    background-color: transparent;
+    color: inherit;
+    transition: v.$bwTransitionOne;
+    &:hover {
+        background-color: v.$bwPrimary;
+        color: v.$bwBackground;
+    }
+}

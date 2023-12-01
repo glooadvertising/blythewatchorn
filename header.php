@@ -8,4 +8,6 @@
 </head>
 <body <?php body_class(); ?>>
 
-<h1></h1>
+<header id="header" class="main-header">
+    
+</header>

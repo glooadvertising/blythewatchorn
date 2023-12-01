@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+html {
+    scroll-behavior: smooth;
+    font-family: v.$bwBody;
+    font-weight: regular;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: v.$bwDisplay;
+    font-weight: v.$bwLight;
+    color: v.$bwPrimary;
+}
+
+button {
+    all: unset;
+}

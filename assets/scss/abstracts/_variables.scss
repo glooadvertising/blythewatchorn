@@ -1,0 +1,28 @@
+// COLOURS
+$bwPrimary: #062752;
+$bwSecondary: #F6F5F5;
+$bwBackground: #FFFFFF;
+$bwCopy: #000000;
+
+// SPACING
+$bwFullWidth: 100%;
+$bwPageWidth: 1440px;
+$bwBlogWidth: 1280px;
+    
+$bwSpaceBase: 1rem;
+$bwSpaceUltraThin: calc($bwSpaceBase / 2);
+$bwSpaceThin: $bwSpaceBase;
+$bwSpaceRegular: calc($bwSpaceBase * 2);
+$bwSpaceMedium: calc($bwSpaceRegular * 2);
+$bwSpaceThick: calc($bwSpaceMedium * 2);
+$bwSpaceUltraThick: calc($bwSpaceThick * 2);
+
+// FONTS
+$bwDisplay: 'Poppins', sans-serif;
+$bwBody: 'Poppins', sans-serif;
+    // FONT WEIGHTS
+    $bwLight: 300;
+    $bwRegular: 400;
+
+// TRANSITIONS
+$bwTransitionOne: 0.3s ease-in-out all;
