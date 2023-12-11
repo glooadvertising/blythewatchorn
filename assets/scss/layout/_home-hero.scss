@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+
+.home-hero {
+    background-color: v.$bwPrimary;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    aspect-ratio: 2.5/1;
+    padding-block: v.$bwSpaceRegular;
+
+    .title-block {
+        background-color: v.$bwBackgroundTrans;
+        color: v.$bwPrimary;
+        min-width: 50%;
+        max-width: 100%;
+        padding-right: v.$bwSpaceThick;
+        padding-block: v.$bwSpaceRegular;
+        clip-path: polygon(0 0, calc(100% - v.$bwSpaceThick) 0, 100% 100%, 0% 100%);
+    }
+}
