@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+.main-header .container {
+  width: 1440px;
+}
+.main-header .container .main-logo img {
+  width: 300px;
+  height: auto;
+}
+
 .home-hero {
   background-color: #062752;
   display: flex;
@@ -92,6 +107,16 @@ button {
   display: none;
 }
 
+.container {
+  margin-inline: auto;
+  padding-inline: 4rem;
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  max-width: 100%;
+}
+
 .btn {
   display: inline-flex;
   padding: 1rem 2rem;
@@ -107,4 +132,35 @@ button {
 .btn:hover {
   background-color: #062752;
   color: #FFFFFF;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+.project-card img {
+  display: flex;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.project-card .card-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgba(6, 39, 82, 0.3137254902);
+  color: #F6F5F5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

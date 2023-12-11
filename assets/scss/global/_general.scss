@@ -19,3 +19,13 @@ button {
 .invisible-text {
     display: none;
 }
+
+.container {
+    margin-inline: auto;
+    padding-inline: v.$bwSpaceMedium;
+    display: inherit;
+    flex-direction: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    max-width: 100%;
+}

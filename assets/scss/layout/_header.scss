@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as v;
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-block: v.$bwSpaceThin;
+    .container {
+        width: v.$bwPageWidth;
+        .main-logo {
+            img {
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
+}
