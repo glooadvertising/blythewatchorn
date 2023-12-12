@@ -15,6 +15,7 @@
         min-width: 50%;
         max-width: 100%;
         padding-right: v.$bwSpaceThick;
+        padding-left: calc(((100vw - v.$bwPageWidth) / 2) + v.$bwSpaceRegular);
         padding-block: v.$bwSpaceRegular;
         clip-path: polygon(0 0, calc(100% - v.$bwSpaceThick) 0, 100% 100%, 0% 100%);
     }

@@ -18,7 +18,7 @@
     .card-overlay {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: space-between;
         justify-content: space-between;
         padding: v.$bwSpaceThin;
         background-color: v.$bwPrimaryTrans;
@@ -27,5 +27,24 @@
         height: 100%;
         position: absolute;
         z-index: 1;
+        opacity: 0;
+        transition: v.$bwTransitionOne;
+        h3 {
+            color: inherit;
+            font-size: 1.5rem;
+            align-self: self-start;
+            margin-top: auto;
+            line-height: 1;
+        }
+        .plus-icon {
+            width: v.$bwSpaceMedium;
+            height: auto;
+            position: absolute;
+            top: v.$bwSpaceThin;
+            right: v.$bwSpaceThin;
+        }
+    }
+    &:hover .card-overlay {
+        opacity: 1;
     }
 }

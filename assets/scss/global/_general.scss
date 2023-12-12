@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6 {
     color: v.$bwPrimary;
 }
 
+h2 {
+    font-size: 2.5rem;
+}
+
 button {
     all: unset;
 }
@@ -22,7 +26,7 @@ button {
 
 .container {
     margin-inline: auto;
-    padding-inline: v.$bwSpaceMedium;
+    padding-inline: v.$bwSpaceRegular;
     display: inherit;
     flex-direction: inherit;
     align-items: inherit;

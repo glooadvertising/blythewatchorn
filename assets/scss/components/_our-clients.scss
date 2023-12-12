@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: v.$bwSpaceThick;
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: v.$bwSpaceRegular;
+        .container {
+            width: v.$bwPageWidth;
+        }
+    }
+    .projects-grid {
+        display: flex;
+        .container {
+            width: v.$bwPageWidth;
+            grid-template-columns: repeat(3, 1fr);
+            gap: v.$bwSpaceThin;
+        }
+
+    }
+}

@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+.testimonial-card {
+    background-color: v.$bwSecondary;
+    color: v.$bwPrimary;
+    padding: v.$bwSpaceMedium;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: v.$bwSpaceRegular;
+
+    p {
+        font-weight: v.$bwLight;
+
+        &:before, &::after {
+            content: '"';
+        }
+        &:before {
+            margin-left: -4.69px;
+        }
+    }
+
+    h3 {
+        font-size: 1rem;
+        font-weight: v.$bwRegular;
+    }
+}

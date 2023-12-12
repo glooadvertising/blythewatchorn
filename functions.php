@@ -9,3 +9,13 @@
     }
 
     add_action( 'wp_enqueue_scripts', 'add_theme_styles_and_scripts' );
+
+    // DEACTIVATE GUTENBERG
+    add_filter('gutenberg_can_edit_post', '__return_false', 5);
+    add_filter('use_block_editor_for_post', '__return_false', 5);
+
+
+    // MENUS
+    add_theme_support( 'menus' );
+    add_theme_support( 'post-thumbnails');
+

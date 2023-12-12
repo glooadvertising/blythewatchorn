@@ -1,0 +1,33 @@
+@use '../abstracts/variables' as v;
+
+.main-footer {
+    color: v.$bwPrimary;
+    font-size: 0.8rem;
+    font-weight: v.$bwLight;
+    border-top: v.$bwSpaceUltraThin solid v.$bwPrimary;
+    padding-block: v.$bwSpaceRegular v.$bwSpaceMedium;
+    background-image: url('../images/iso.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    .container {
+        width: v.$bwPageWidth;
+        .col-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: v.$bwSpaceRegular;
+        }
+    }
+
+    img {
+        width: 340px;
+        height: auto;
+    }
+
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
