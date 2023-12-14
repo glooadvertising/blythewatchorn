@@ -1,0 +1,12 @@
+@use '../abstracts/variables' as v;
+
+.projects {
+    display: flex;
+    padding: v.$bwSpaceThin;
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: v.$bwSpaceThin;
+        width: 100%;
+    }
+}

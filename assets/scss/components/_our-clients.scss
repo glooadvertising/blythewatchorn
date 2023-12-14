@@ -18,7 +18,8 @@
         display: flex;
         .container {
             width: v.$bwPageWidth;
-            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: v.$bwSpaceThin;
         }
 

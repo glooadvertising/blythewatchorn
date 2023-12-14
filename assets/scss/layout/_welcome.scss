@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as v;
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    padding-top: v.$bwSpaceThin;
+    position: relative;
+
+    .col-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: calc(((100vw - v.$bwPageWidth) / 2) + v.$bwSpaceRegular);
+        padding-right: v.$bwSpaceMedium;
+        margin-block: v.$bwSpaceThick;
+        gap: v.$bwSpaceRegular;
+        max-width: 50%;
+        color: v.$bwPrimary;
+        .text-group {
+            display: flex;
+            flex-direction: column;
+            gap: v.$bwSpaceThin;
+        }
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: v.$bwSpaceThin;
+            .headshot {
+                display: flex;
+                width: 200px;
+                height: 200px;
+
+            }
+            .group-info {
+                color: v.$bwPrimary;
+                .name {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+    .col-right {
+        display: flex;
+        aspect-ratio: 1;
+        max-width: 50%;
+        position: relative;
+        margin-left: auto;
+        height: 100%;
+
+    }
+}

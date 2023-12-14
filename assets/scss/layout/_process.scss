@@ -1,0 +1,71 @@
+@use '../abstracts/variables' as v;
+
+.process {
+    display: flex;
+    flex-direction: column;
+    padding-block: v.$bwSpaceMedium v.$bwSpaceThick;
+    .container {
+        width: v.$bwBlogWidth;
+        .the-content-wrapper {
+            margin-bottom: v.$bwSpaceThick;
+            color: v.$bwPrimary;
+        }
+        .process-step{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            h2 {
+                line-height: 1.2;
+                margin-bottom: v.$bwSpaceThin;
+                font-size: 1.8rem;
+            }
+            &:last-child .vert-bar{
+                display: none;
+            }
+
+            .vert-bar {
+                display: flex;
+                width: calc(v.$bwSpaceThin / 2);
+                height: 100%;
+                background-color: v.$bwSecondary;
+                position: absolute;
+                margin-left: calc((v.$bwSpaceThin / 2) * 1.5);
+                overflow: hidden;
+                
+                .vert-bar-content {
+                    position: absolute;
+                    background-color: v.$bwPrimary;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .square {
+                display: block;
+                width: v.$bwSpaceThin;
+                width: v.$bwSpaceRegular;
+                aspect-ratio: 1;
+                background-color: v.$bwPrimary;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+
+            }
+            .process-content {
+                display: flex;
+                flex-direction: column;
+                width: calc(100% - v.$bwSpaceMedium);
+                margin-left: v.$bwSpaceMedium;
+                padding: 0 v.$bwSpaceThick v.$bwSpaceMedium 0;
+                p, ul {
+                    margin-bottom: v.$bwSpaceThin;
+                }
+
+            }
+        }
+
+    }
+}

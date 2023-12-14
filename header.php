@@ -16,4 +16,3 @@
             <?php wp_nav_menu( ); ?>
         </div>
     </header>
-    <?php is_page('home') ? get_template_part( 'partials/home-hero' ) : null ; ?>

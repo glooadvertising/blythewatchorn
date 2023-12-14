@@ -10,6 +10,11 @@ h1, h2, h3, h4, h5, h6 {
     font-family: v.$bwDisplay;
     font-weight: v.$bwLight;
     color: v.$bwPrimary;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.8rem;
 }
 
 h2 {

@@ -4,7 +4,9 @@
         // STYLESHEETS
         wp_enqueue_style( 'style', get_stylesheet_uri());
         wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/css/main.min.css', [], false, 'all' );
+        wp_enqueue_style( 'aos', 'https://unpkg.com/aos@2.3.1/dist/aos.css', [], false, 'all' );
         // SCRIPTS
+        wp_enqueue_script( 'aosjs', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], false, true );
         wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/js/main.js', ['jquery'], false, true );
     }
 
