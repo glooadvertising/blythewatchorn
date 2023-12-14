@@ -42,7 +42,7 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: v.$bwSecondary;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -53,7 +53,7 @@ img {vertical-align: middle;}
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: v.$bwSecondary;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
