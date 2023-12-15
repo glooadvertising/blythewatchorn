@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as v;
+
+.promise {
+    padding: v.$bwSpaceRegular;
+    padding-right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .promise-white-block {
+        background-color: v.$bwBackground;
+        padding-block: v.$bwSpaceMedium;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 30%;
+        .container {
+            width: v.$bwPageWidth;
+            gap: v.$bwSpaceRegular;
+            align-items: flex-start;
+            justify-content: stretch;
+            span {
+                display: flex;
+                gap: inherit;
+            }
+            .col {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: v.$bwSpaceThin;
+                flex-grow: 1;
+                height: 100%; 
+                flex-wrap: wrap;            
+            }
+
+        }
+    }
+}
