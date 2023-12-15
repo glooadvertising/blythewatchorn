@@ -28,6 +28,11 @@
 .main-header .container .menu li a:hover {
   color: #F6F5F5;
 }
+@media screen and (max-width: 1280px) {
+  .main-header .container .menu {
+    display: none;
+  }
+}
 
 .main-footer {
   color: #062752;
