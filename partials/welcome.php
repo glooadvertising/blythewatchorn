@@ -3,10 +3,12 @@
         <span class="text-group">
             <h2>Welcome</h2>
             <?php the_content(); ?>
+            <a href="/about-us" class="btn">About us</a>
         </span>
-        <a href="/about-us" class="btn">About us</a>
         <?php get_template_part( 'partials/profile-card' ); ?>
     </div>
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg" alt="Welcome" class="col-right">
+    <div class="col-right">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/LLG_0889.jpg" alt="Welcome">
+    </div>
 
 </section>

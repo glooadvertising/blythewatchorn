@@ -3,26 +3,45 @@
 .welcome {
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-top: v.$bwSpaceThin;
     position: relative;
 
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+    }
+
     .col-left {
+        width: 50%;
+        @media screen and (max-width: 780px) {
+            width: 100%;
+        }
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: flex-start;
-        padding-left: calc(((100vw - v.$bwPageWidth) / 2) + v.$bwSpaceRegular);
-        padding-right: v.$bwSpaceMedium;
-        margin-block: v.$bwSpaceThick;
-        gap: v.$bwSpaceRegular;
-        max-width: 50%;
+        margin-block: v.$bwSpaceMedium;
+        padding-inline: 0 v.$bwSpaceMedium;
+        gap: v.$bwSpaceMedium;
         color: v.$bwPrimary;
         .text-group {
+            width: calc((v.$bwPageWidth / 2) - v.$bwSpaceMedium);
+            max-width: 100%;
+            padding-left: v.$bwSpaceRegular;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
             gap: v.$bwSpaceThin;
+
+            .btn {
+                margin-left: 0;
+            }
         }
         .profile-card {
+            width: calc((v.$bwPageWidth / 2) - v.$bwSpaceMedium);
+            max-width: 100%;
+            padding-left: v.$bwSpaceRegular;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -31,6 +50,7 @@
                 display: flex;
                 width: 200px;
                 height: 200px;
+                object-fit: cover;
 
             }
             .group-info {
@@ -43,11 +63,18 @@
     }
     .col-right {
         display: flex;
-        aspect-ratio: 1;
-        max-width: 50%;
+        width: 50%;
+        @media screen and (max-width: 780px) {
+            width: 100%;
+        }
         position: relative;
         margin-left: auto;
         height: 100%;
+        img {
+            display: flex;
+            width:100%;
+            height: 50vw;
+        }
 
     }
 }

@@ -10,6 +10,15 @@
     background-repeat: no-repeat;
     background-position: right bottom;
 
+    @media screen and (max-width: 760px) {
+        background-size: 200px;
+    }
+
+    @media screen and (max-width: 620px) {
+        background-size: 160px;
+        padding-bottom: v.$bwSpaceThick;
+    }
+
     .container {
         width: v.$bwPageWidth;
         .col-left {

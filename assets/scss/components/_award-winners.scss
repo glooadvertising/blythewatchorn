@@ -21,18 +21,38 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: v.$bwSpaceMedium;
+
+            @media screen and (max-width: 1280px) {
+                gap: v.$bwSpaceRegular;
+            }
+
+            @media screen and (max-width: 1080px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
             .col-right {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: v.$bwSpaceRegular;
+                
                 .awards{
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    gap: inherit;
+
+                    @media screen and (max-width: 580px) {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     img {
                         width: 120px;
+
+                        @media screen and (max-width: 580px) {
+                            margin-inline: auto;
+                        }
                     }
                 }
             }

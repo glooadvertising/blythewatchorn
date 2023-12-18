@@ -1,4 +1,4 @@
-<section class="promise" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/placeholder.jpg')">
+<section class="promise" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images/promise.jpg')">
     <div class="promise-white-block">
         <div class="container">
             <span>

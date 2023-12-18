@@ -60,6 +60,10 @@
                 width: calc(100% - v.$bwSpaceMedium);
                 margin-left: v.$bwSpaceMedium;
                 padding: 0 v.$bwSpaceThick v.$bwSpaceMedium 0;
+
+                @media screen and (max-width: 580px) {
+                    padding-right: v.$bwSpaceMedium;
+                }
                 p, ul {
                     margin-bottom: v.$bwSpaceThin;
                 }

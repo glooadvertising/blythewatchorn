@@ -2,30 +2,38 @@
 
 .page-hero {
     background-color: v.$bwPrimary;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    aspect-ratio: 3.5/1;
     padding-block: v.$bwSpaceRegular;
     position: relative;
-
-    img {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-    }
+    padding-top: 35vh;
 
     .title-block {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         background-color: v.$bwBackgroundTrans;
         color: v.$bwPrimary;
-        width: 50%;
-        max-width: 100%;
         padding-right: v.$bwSpaceThick;
-        padding-left: calc(((100vw - v.$bwPageWidth) / 2) + v.$bwSpaceRegular);
         padding-block: v.$bwSpaceRegular;
         clip-path: polygon(0 0, calc(100% - v.$bwSpaceThick) 0, 100% 100%, 0% 100%);
+
+        @media screen and (max-width: 980px) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: 680px) {
+            width: 90%;
+        }
+
+        h1 {
+            width: calc((v.$bwPageWidth / 2) - v.$bwSpaceThick);
+            margin-left: auto;
+            padding-left: v.$bwSpaceRegular;
+            text-wrap: wrap;
+        }
     }
 }
