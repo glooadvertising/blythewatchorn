@@ -8,6 +8,7 @@
         // SCRIPTS
         wp_enqueue_script( 'aosjs', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], false, true );
         wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/js/main.js', ['jquery'], false, true );
+        wp_enqueue_script( 'burgerjs', get_template_directory_uri() . '/assets/js/burger.js', ['jquery'], false, true );
     }
 
     add_action( 'wp_enqueue_scripts', 'add_theme_styles_and_scripts' );

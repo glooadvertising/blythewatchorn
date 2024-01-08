@@ -7,12 +7,16 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+    <?php get_template_part( 'partials/mobile-menu' ); ?>
     <header id="header" class="main-header">
         <div class="container">
             <a href="<?php echo get_home_url(); ?>" class="main-logo">
                 <span class="invisible-text"><?php bloginfo('title'); ?></span>
                 <img src="<?php echo get_template_directory_uri();?>/assets/images/main-logo.svg" alt="<?php bloginfo('title'); ?> logo">
             </a>
-            <?php wp_nav_menu( ); ?>
+            <span class="menu-wrapper">
+                <?php wp_nav_menu( ); ?>
+                <?php get_template_part( 'partials/burger' ); ?>
+            </span>
         </div>
     </header>

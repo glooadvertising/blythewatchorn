@@ -14,22 +14,27 @@
   width: 380px;
   height: auto;
 }
-.main-header .container .menu {
+.main-header .container .menu-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.main-header .container .menu-wrapper .menu {
   display: inline-flex;
   list-style: none;
   text-transform: uppercase;
   font-weight: 300;
   gap: 4rem;
 }
-.main-header .container .menu li a {
+.main-header .container .menu-wrapper .menu li a {
   color: inherit;
   text-decoration: none;
 }
-.main-header .container .menu li a:hover {
-  color: #F6F5F5;
+.main-header .container .menu-wrapper .menu li a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 1280px) {
-  .main-header .container .menu {
+  .main-header .container .menu-wrapper .menu {
     display: none;
   }
 }
@@ -382,6 +387,50 @@
   .projects .projects-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+.mobile-menu {
+  background-color: #062752;
+  opacity: 0.9;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  z-index: 1000;
+  color: #FFFFFF;
+  left: -100%;
+  transition: 0.3s ease-out all;
+}
+.mobile-menu .menu-main-menu-container {
+  position: relative;
+}
+.mobile-menu .menu-main-menu-container .menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  margin-block: 0;
+  text-transform: uppercase;
+}
+.mobile-menu .menu-main-menu-container .menu li {
+  display: flex;
+}
+.mobile-menu .menu-main-menu-container .menu li a {
+  display: flex;
+  padding: 1rem;
+  text-decoration: none;
+}
+.mobile-menu .menu-main-menu-container .menu li a:hover {
+  font-weight: bold;
+}
+.mobile-menu a {
+  color: inherit;
+}
+
+.visible {
+  left: 0;
 }
 
 /*
@@ -853,5 +902,44 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
     font-size: 11px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    width: 24px;
+    height: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger > * {
+    width: 24px;
+    height: 2px;
+    background-color: #062752;
+    transition: 0.3s ease-in-out all;
+  }
+  .cross {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .cross .lid {
+    position: absolute;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .cross .base {
+    position: absolute;
+    transform: rotate(45deg);
+    transform-origin: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .cross .patty {
+    position: relative;
+    background-color: transparent;
   }
 }/*# sourceMappingURL=main.css.map */

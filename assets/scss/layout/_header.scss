@@ -16,24 +16,31 @@
             }
         }
 
-        .menu {
-            display: inline-flex;
-            list-style: none;
-            text-transform: uppercase;
-            font-weight: v.$bwLight;
-            gap: v.$bwSpaceMedium;
-            li {
-                a {
-                    color: inherit;
-                    text-decoration: none;
-                    &:hover {
-                        color: v.$bwSecondary;
+        .menu-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .menu {
+                display: inline-flex;
+                list-style: none;
+                text-transform: uppercase;
+                font-weight: v.$bwLight;
+                gap: v.$bwSpaceMedium;
+                li {
+                    a {
+                        color: inherit;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
                     }
                 }
-            }
-            @media screen and (max-width: 1280px) {
-                display: none;
-            }
+                @media screen and (max-width: 1280px) {
+                    display: none;
+                }
+
+        }
+
         }
 
     }
