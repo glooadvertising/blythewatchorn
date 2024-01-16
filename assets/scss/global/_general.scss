@@ -1,9 +1,12 @@
 @use '../abstracts/variables' as v;
 
+
+
 html {
     scroll-behavior: smooth;
     font-family: v.$bwBody;
     font-weight: regular;
+    color: v.$bwPrimary;
 }
 
 h1, h2, h3, h4, h5, h6 {
