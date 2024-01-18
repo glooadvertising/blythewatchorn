@@ -24,7 +24,7 @@
   list-style: none;
   text-transform: uppercase;
   font-weight: 300;
-  gap: 4rem;
+  gap: 2rem;
 }
 .main-header .container .menu-wrapper .menu li a {
   color: inherit;
@@ -433,6 +433,20 @@
   left: 0;
 }
 
+.contact {
+  margin-block: 8rem;
+}
+.contact .container {
+  width: 1440px;
+}
+.contact input, .contact textarea {
+  border-radius: 0 !important;
+  border: 1px solid #062752 !important;
+}
+.contact input:active, .contact textarea:active {
+  border-bottom: 3px !important;
+}
+
 /*
 1. Use a more-intuitive box-sizing model.
 */
@@ -536,19 +550,20 @@ button {
   max-width: 100%;
 }
 
-.btn {
+.btn, button {
   display: inline-flex;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem !important;
   text-align: center;
   text-decoration: none;
   text-transform: lowercase;
-  line-height: 1.1;
+  line-height: 1.1 !important;
   border: 1px solid;
+  border-radius: 0 !important;
   background-color: transparent;
   color: inherit;
   transition: 0.3s ease-in-out all;
 }
-.btn:hover {
+.btn:hover, button:hover {
   background-color: #062752;
   color: #FFFFFF;
 }

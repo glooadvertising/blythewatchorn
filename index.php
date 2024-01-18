@@ -8,6 +8,7 @@
     <?php is_page('about-us') ? get_template_part( 'partials/award-winners' ) : null; ?>
     <?php is_page('our-process') ? get_template_part( 'partials/process' ) : null; ?>
     <?php is_page('our-projects') ? get_template_part( 'partials/projects' ) : null; ?>
+    <?php is_page('contact-us') ? get_template_part( 'partials/contact' ) : null ; ?>
 
 <?php get_footer(); ?>
 

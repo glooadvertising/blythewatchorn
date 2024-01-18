@@ -11,7 +11,7 @@
                 </div>
                 <?php the_content();?>
             </span>
-            <a href="<?php get_site_url( ); ?>/our-projects" class="btn">View all projects</a>
+            <a href="<?php echo get_site_url( ); ?>/our-projects" class="btn">View all projects</a>
         </div>
     </section>
 

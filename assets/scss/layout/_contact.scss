@@ -1,0 +1,16 @@
+@use '../abstracts/variables' as v;
+
+.contact {
+    margin-block: v.$bwSpaceThick;
+    .container {
+        width: v.$bwPageWidth;
+    }
+
+    input, textarea {
+        border-radius: 0 !important;
+        border: 1px solid v.$bwPrimary !important;
+        &:active {
+            border-bottom: 3px !important;
+        }
+    }
+}

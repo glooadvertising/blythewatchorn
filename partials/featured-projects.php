@@ -2,7 +2,7 @@
     <header>
         <div class="container">
             <h2>Featured Projects</h2>
-            <a href="/projects" class="btn">view all</a>
+            <a href="<?php echo get_site_url( ); ?>/our-projects" class="btn">view all</a>
         </div>
     </header>
     <div class="projects-grid">

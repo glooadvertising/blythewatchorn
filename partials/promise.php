@@ -24,7 +24,7 @@
                 </div>
             </span>
             <div class="col">
-                <a href="/#contact-us" class="btn">Contact us</a>
+                <a href="<?php echo get_site_url( ); ?>/contact-us" class="btn">Contact us</a>
             </div>
         </div>
     </div>

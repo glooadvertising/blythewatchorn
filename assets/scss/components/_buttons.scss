@@ -1,13 +1,14 @@
 @use '../abstracts/variables' as v;
 
-.btn {
+.btn, button {
     display: inline-flex;
-    padding: v.$bwSpaceThin v.$bwSpaceRegular;
+    padding: v.$bwSpaceThin v.$bwSpaceRegular !important;
     text-align: center;
     text-decoration: none;
     text-transform: lowercase;
-    line-height: 1.1;
+    line-height: 1.1 !important;
     border: 1px solid;
+    border-radius: 0 !important;
     background-color: transparent;
     color: inherit;
     transition: v.$bwTransitionOne;

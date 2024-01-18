@@ -3,7 +3,7 @@
         <span class="text-group">
             <h2>Welcome</h2>
             <?php the_content(); ?>
-            <a href="/about-us" class="btn">About us</a>
+            <a href="<?php echo get_site_url( ); ?>/about-us" class="btn">About us</a>
         </span>
         <?php get_template_part( 'partials/profile-card' ); ?>
     </div>
