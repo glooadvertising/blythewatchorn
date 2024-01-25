@@ -826,9 +826,9 @@ body {
 
 img {
   vertical-align: middle;
+  width: 100%;
   height: 100%;
   left: 50%;
-  transform: translateX(-50%);
 }
 
 /* Slideshow container */
