@@ -8,7 +8,7 @@
                     <ul>
                         <li>That meet your needs</li>
                         <li>With clear and concise estimate</li>
-                        <li>With Quality Guaranteed</li>
+                        <li>With quality guaranteed</li>
                     </ul>
                 </div>
                 <div class="col">
