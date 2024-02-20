@@ -18,6 +18,8 @@
                 </div>
                 <p>Blythe and Watchorn Builders have earned a long standing reputation for achieving excellence. We have been lucky enough to win many awards, including:</p>
                 <ul>
+                    <li>2022 Host Trainer of the Year</li>
+                    <li>Life Membership of the HIA</li>
                     <li>2021 HIA Tasmanian Apprentice of the Year Award</li>
                     <li>Finalists in the 2021 HIA Tasmanian Renovation/Addition Project Over $500,001</li>
                     <li>2016 HIA Tasmanian Apartment of the Year</li>

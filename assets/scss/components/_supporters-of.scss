@@ -1,0 +1,47 @@
+@use '../abstracts/variables' as v;
+
+.supporters-of-section {
+    background-color: v.$bwSecondary;
+    display: flex;
+
+    .container {
+        width: v.$bwPageWidth;
+        margin-block: v.$bwSpaceMedium;
+        display: flex;
+        flex-direction: column;
+        gap: v.$bwSpaceThick;
+
+        .supporter-of-cards-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: v.$bwSpaceRegular;
+            margin-bottom: v.$bwSpaceMedium;
+
+            @media screen and (max-width: 980px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media screen and (max-width: 580px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: v.$bwSpaceMedium;
+            }
+
+            .supporter-of-card {
+                @media screen and (max-width: 980px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+    
+                img {
+                    max-height: 100px;
+                    max-width: 220px;
+                }
+            }
+        }
+    }
+}
+
