@@ -28,4 +28,6 @@
             </div>
         </div>
     </div>
+    <?php is_page('about-us') ? get_template_part( 'partials/employee' ) : null; ?>
+
 </section>

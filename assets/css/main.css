@@ -765,6 +765,9 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .promise .promise-white-block {
   background-color: #FFFFFF;
@@ -801,6 +804,44 @@ button {
   }
 }
 .promise .promise-white-block .container .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-grow: 1;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.promise .employee-white-block {
+  background-color: #FFFFFF;
+  padding-block: 4rem;
+  transform: translateX(-2rem);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.promise .employee-white-block .container {
+  width: 1440px;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+.promise .employee-white-block .container span {
+  display: flex;
+  gap: inherit;
+}
+@media screen and (max-width: 640px) {
+  .promise .employee-white-block .container span {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 740px) {
+  .promise .employee-white-block .container {
+    flex-direction: column;
+  }
+}
+.promise .employee-white-block .container .col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1008,4 +1049,5 @@ body {
 .supporters-of-section .container .supporter-of-cards-container .supporter-of-card img {
   max-height: 100px;
   max-width: 220px;
+  mix-blend-mode: multiply;
 }/*# sourceMappingURL=main.css.map */

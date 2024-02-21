@@ -12,7 +12,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Australian_Red_Cross_full_logo.png" alt="Australian Red Cross">
             </div>
             <div class="supporter-of-card">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/DDS_logo.png" alt="Derwent Sailing Squadron">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/dss_stamp.png" alt="Derwent Sailing Squadron">
             </div>
         </div>
     </div>

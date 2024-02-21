@@ -6,6 +6,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: v.$bwSpaceRegular;
     .promise-white-block {
         background-color: v.$bwBackground;
         padding-block: v.$bwSpaceMedium;
@@ -18,6 +21,45 @@
             margin-top: 100vw;
         }
 
+        .container {
+            width: v.$bwPageWidth;
+            gap: v.$bwSpaceRegular;
+            align-items: flex-start;
+            justify-content: stretch;
+            span {
+                display: flex;
+                gap: inherit;
+
+                @media screen and (max-width: 640px) {
+                    flex-direction: column;
+                }
+
+            }
+
+            @media screen and (max-width: 740px) {
+                flex-direction: column;
+            }
+    
+            .col {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: v.$bwSpaceThin;
+                flex-grow: 1;
+                height: 100%; 
+                flex-wrap: wrap;            
+            }
+
+        }
+    }
+    .employee-white-block {
+        background-color: v.$bwBackground;
+        padding-block: v.$bwSpaceMedium;
+        transform: translateX(-(v.$bwSpaceRegular));
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
         .container {
             width: v.$bwPageWidth;
             gap: v.$bwSpaceRegular;
