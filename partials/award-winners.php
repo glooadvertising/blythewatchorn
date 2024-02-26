@@ -16,7 +16,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/HIA-Award-winner-logo.png" alt="">    
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/HIA-Award-winner-logo.png" alt="">    
                 </div>
-                <p>Blythe and Watchorn Builders have earned a long standing reputation for achieving excellence. We have been lucky enough to win many awards, including:</p>
+                <p>Blythe & Watchorn Builders have earned a long standing reputation for achieving excellence. We have been lucky enough to win many awards, including:</p>
                 <ul>
                     <li>2022 Host Trainer of the Year</li>
                     <li>Life Membership of the HIA</li>
