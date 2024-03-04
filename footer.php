@@ -6,7 +6,7 @@
                 </a>
                 <span>
                     <p>m <a href="tel:0418-146-691">0418 146 691</a> p <a href="tel:03-6229-9930">03 6229 9930</a></p>
-                    <p>e <a href="mailto:rob@blythewachorn.com.au">rob@blythewachorn.com.au</a></p>
+                    <p>e <a href="mailto:rob@blythewatchorn.com.au">rob@blythewatchorn.com.au</a></p>
                 </span>
                 <p>Copyright © <?php bloginfo( 'title' )?> - Site by <a href="https://glooadvertising.com.au">Gloo</a></p>
 
